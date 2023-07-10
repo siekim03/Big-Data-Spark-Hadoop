@@ -63,6 +63,10 @@ The advantages of MapReduce is its ability to allow for a high level of parallel
   * Fault tolerant - if one machine crashes, a copy of the data can be found somewhere else and work continues
   * Scalable - one cluster can be scaled into hundreds of nodes
   * Portable - easily move accross multiple platform
-
-
+* Block - minimum amount of data that can be read or written, default size is 64 MB or 128 MB.
+* Node - single system which is responsible to store and process data
+  * Primary node (name node)- regulates file access to the clients and maintains, manages, and assigns tasks to the secondary node
+  * Secondary node (data node) - actual workers in the HDFS system and take instructions from the primary nodes
+* ***Rack awareness*** - choosing data node racks that are closest to each other. A rack is the collection of about 40 to 50 data nodes using the same network switch. Improves cluster performance by reducing the network traffic. Name node keeps the rack ID information. Replication can be done through rack awareness.
+* ***Replication*** - creating a copy of data block. Replication factor: number of times the data block was copied.
 
