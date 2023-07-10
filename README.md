@@ -48,5 +48,11 @@ An example would be to, say, change the date format in a single column of a larg
 In the Hadoop ecosystem, the concept of “bringing compute to the data” is a central idea in the design of the cluster. The cluster is designed in a way that computations on certain pieces, or partitions, of the data will take place right at the location of the data when possible. The resulting output will also be written to the same node. Computers break, outages happen, and you need to be prepared. In such cases, fault tolerance comes into play. Fault tolerance refers to the ability of a system to continue operating without interruption when one or more of its components fail. This works for Hadoop primary data storage system (HDFS) and other similar storage systems (like S3 and object storage), a system like the one we showcase here. Consider the first 3 partitions of a data set labelled P1, P2, and P3, which reside on the first node. In this system, copies of each of these data partitions are also stored on other locations or nodes within the cluster. If the first node ever goes down, you can add a new node to the cluster and recover the lost partitions by copying data from one of the other nodes where copies of P1, P2, and P3 partitions are stored. Clearly, this is an extraordinarily complex maintenance process, but the Hadoop filesystem is a robust and time-tested framework. It can be reliable to 5 9s (99.999%). 
 
 ### Big Data Tools and Ecosystems
-
+#### Categories of Big Data tooling
+1. Data Technologies - Hadoop, HDFS, Spark, MapReduce, Cloudera, and Databricks
+2. Analytics and Visualization
+3. Business intelligence
+4. Cloud Providers
+5. NoSQL Databases
+6. Programming tools
 
