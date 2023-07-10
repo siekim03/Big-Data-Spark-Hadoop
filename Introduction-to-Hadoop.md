@@ -40,9 +40,29 @@ The advantages of MapReduce is its ability to allow for a high level of parallel
 * Sqoop - transfer data between relational database and Hadoop, access database to understand the schema of the data, generate MapReduce application to import or export data
 
 #### Store data
-* HBase - a non-relational database that runs on top of HDFS
-* 
+* HBase - a non-relational database that runs on top of HDFS, provides real time wrangling on data, stores data as indexes to allow for random and faster access to data
+* Cassandra - NoSQL database desgined to have no single point of failure
 
+#### Analyze data
+* Pig - operates on the client side of a cluster, a procedural data flow language
+* Hive - Used for creating reports, operates on the server side of a cluster, a declarative programming language
+
+#### Access data 
+* Impala
+* Hue (Hadoop user experience) - allow you to upload, browse, and query data, run Pig Jobs and workflow, provides SQL editor for several query languages
+
+### HDFS 
+* Storage layer of Hadoop
+* Splits the files into blocks, creates replicas of the blocks, and stores them on different machines
+* Provides access to streaming data. Streaming means that HDFS provides a constant bitrate when transferring data rather than having the data being transferred in waves.
+* Uses a command line interface to interact with Hadoop
+* Key features
+  * Cost efficient - storage hardware is not expensive
+  * Large amounts of data - store up to petabytes of data 
+  * Replication - make copies of the data on multiple machines 
+  * Fault tolerant - if one machine crashes, a copy of the data can be found somewhere else and work continues
+  * Scalable - one cluster can be scaled into hundreds of nodes
+  * Portable - easily move accross multiple platform
 
 
 
