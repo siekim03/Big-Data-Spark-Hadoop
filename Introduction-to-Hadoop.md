@@ -17,4 +17,4 @@
 * Not good for processing lots of small files, although there is work being done in this area such as IBM’s Adaptive MapReduce.
 * Not good for intensive calculations with little data.
 
-To deal with the shortcomings of Hadoop, new tools like ***Hive*** were built on top of Hadoop. Hive provided SQL-like query and provided users with strong statistical functions. Pig was popular for its multi query approach to cut down the number of times that the data is scanned. In this video you learned that: Hadoop is an open-source frame framework for Big Data The core components of Hadoop are HDFS, MapReduce, YARN, and Hadoop Common The drawbacks of Hadoop outweighed the benefits.
+To deal with the shortcomings of Hadoop, new tools like ***Hive*** were built on top of Hadoop. Hive provided SQL-like query and provided users with strong statistical functions. ***Pig*** was popular for its multi query approach to cut down the number of times that the data is scanned.
