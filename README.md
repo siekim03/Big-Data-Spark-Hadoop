@@ -1,7 +1,7 @@
 # Introduction to Big Data with Spark and Hadoop
 
 ## Big Data
-* Generated in huge volumes, could be structured, semi-structured, or unstructured.
+* Generated in huge volumes, could be structured (SQL, spreadsheets), semi-structured (XML, JSON), or unstructured.
 * Arrives continuously at enormous speed from multiple sources
 * Distributed on the cloud and server farms
 
@@ -49,10 +49,19 @@ In the Hadoop ecosystem, the concept of “bringing compute to the data” is a 
 
 ### Big Data Tools and Ecosystems
 #### Categories of Big Data tooling
-1. Data Technologies - Hadoop, HDFS, Spark, MapReduce, Cloudera, and Databricks
-2. Analytics and Visualization
-3. Business intelligence
-4. Cloud Providers
-5. NoSQL Databases
-6. Programming tools
+1. **Data Technologies** - Hadoop, HDFS, Spark, MapReduce, Cloudera, and Databricks
+2. **Analytics and Visualization** - Tableau
+3. **Business intelligence** - Cognos, Oracle, PowerBI, Buiness Objects
+4. **Cloud Providers** - AWS, IBM, GCP, Oracle
+5. **NoSQL Databases** - Store information in JSON documents instead of relational tables. Include pure document databases, key-value stores, wide-column databases, and graph databases. Examples include MongoDB, CouchDB, Cassandra, Redis
+6. **Programming tools** - R, Python, SQL, Scala
+
+### Open source in Big Data 
+The biggest component of big data is, by far, the **_Hadoop_** project and its three main components: ***MapReduce***, ***The Hadoop File System (HDFS)***, and ***The resource manager (YARN)***. MapReduce is a framework that allows code to be written to run at scale on a Hadoop cluster. It is still used, but not as much as more modern Big Data computation frameworks like ***Apache Spark***. HDFS is the file system that stores and manages Big Data files. It manages all of the issues around large and distributed datasets, including resilience and partitioning. It is still a mainstay of the industry. 70% of the world’s Big Data resides on HDFS. More modern approaches to distributed storage, such as S3 and object storage, are coming into use, but they are based on the design principles of HDFS. YARN is the resource manager that comes with Hadoop, and it is the default resource manager for many Big Data applications, including HIVE and Spark. It is one of the most robust resource managers in use today, but more modern container-based resource managers (like Kubernetes) are slowly becoming the new de facto standards. Concluding, these are the main components of the Hadoop ecosystem, and most big data applications are built on top of them. 
+
+The array of big data applications available to the user is dizzying. They all build upon the basic Hadoop framework or interact with it in some way, however. Frameworks like Hive and Spark support lots of ETL (Extract, Transform, Load) and computation tasks on Hadoop systems. Some systems that integrate tightly with the Hadoop ecosystem are: Apache Hbase, which is a large NoSQL datastore. It manages storage and computation resources outside of the Hadoop ecosystem but often resides on the same cluster. Open-source packages like the Hortonworks Data Platform (HDP) provide a set of big data tools that are already configured to work together, and include most of the important open source packages (Hadoop, Spark, Hive, Hbase, and others).
+
+
+
+
 
