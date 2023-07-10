@@ -61,7 +61,12 @@ The biggest component of big data is, by far, the **_Hadoop_** project and its t
 
 The array of big data applications available to the user is dizzying. They all build upon the basic Hadoop framework or interact with it in some way, however. Frameworks like Hive and Spark support lots of ETL (Extract, Transform, Load) and computation tasks on Hadoop systems. Some systems that integrate tightly with the Hadoop ecosystem are: Apache Hbase, which is a large NoSQL datastore. It manages storage and computation resources outside of the Hadoop ecosystem but often resides on the same cluster. Open-source packages like the Hortonworks Data Platform (HDP) provide a set of big data tools that are already configured to work together, and include most of the important open source packages (Hadoop, Spark, Hive, Hbase, and others).
 
-
-
+## Summary 
+* Personal assistants like Siri, Alexa and Google Now, use Big Data and IoT to gather data and devise answers.
+* Big Data Analytics helps companies gain insights from the data collected by IoT devices.
+* Big Data requires parallel processing on account of massive volumes of data that are too large to fit on any one computer.
+* "Embarrassingly parallel” calculations are the kinds of workloads that can easily be divided and run independently of one another. If any single process fails, that process has no impact on the other processes and can simply be re-run.
+* Open-source projects, which are free and completely transparent, run the world of Big Data and include the Hadoop project and big data tools like Apache Hive and Apache Spark.
+* The Big Data tool ecosystem includes the following six main tooling categories: data technologies, analytics and visualization, business intelligence, cloud providers, NoSQL databases, and programming tools.
 
 
