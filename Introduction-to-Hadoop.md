@@ -93,7 +93,34 @@ The advantages of MapReduce is its ability to allow for a high level of parallel
 |Enforces that the schema must verify loading data before it can proceed|Doesn't enforce the schema to verify loading data|
 |Mya not always have built-in for support data partitioning|Supports partitioning (dividing the table into parts based on the values of a particular column such as date or city)|
 
+![](Hive_Architecture.PNG?raw=true)
 
+### HBASE
+* Column-oriented non-relational database management system
+* Runs on top of HDFS
+* Provides a fault-tolerant way of storing sparse datasets
+* Works well with real-time data and random read and write access to Big Data
+* USed ofr write-heavy applications
+* Linearly and modularly scalable
+* Backup support for MapReduce jobs
+* Provides consistent reads and writes
+* Has no fixed column schema
+* Easy-to-use Java API for client access
+* Provides data replication across clusters
 
+### Differences between HBase and HDFS
 
+| HBase        | HDFS           |
+|--------------------------|----------------|
+|Stores data in the form of columns and rows in a table|Stores data in distributed manner across different nodes on that network|
+|Allows dynamic changes|Has a rigid architecture that doesn't allow changes|
+|Suitable for random writes and reads of data stores in HDFS|Suited for write once and read many times|
+|Allows for storing and processing of Big Data| For storing only|
 
+## Summary and Highlights
+* Hadoop is an open-source framework for Big Data that faced challenges when encountering dependencies and low-level latency.
+* MapReduce, a parallel computing framework used in parallel computing, is flexible for all data types, addresses parallel processing needs for multiple industries and contains two major tasks, “map” and “reduce.”
+* The four main stages of the Hadoop Ecosystem are Ingest, Store, Process and Analyze, and Access.
+* Key HDFS benefits include its cost efficiency, scalability, data storage expansion and data replication capabilities. Rack awareness helps reduce the network traffic and improve cluster performance. HDFS enables “write once, read many” operations.
+* Suited for static data analysis and built to handle petabytes of data, Hive is a data warehouse software for reading, writing, and managing datasets. Hive is based on the “write once, read many” methodology, doesn’t enforce the schema to verify loading data and has built-in partitioning support.
+* Linearly scalable and highly efficient, HBase is a column-oriented non-relational database management system that runs on HDFS and provides an easy-to-use Java API for client access. HBase architecture consists of HMaster, Region servers, Region, Zookeeper and HDFS. A key difference between HDFS and HBase is that HBase allows dynamic changes compared to the rigid architecture of HDFS.
