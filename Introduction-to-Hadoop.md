@@ -79,10 +79,19 @@ The advantages of MapReduce is its ability to allow for a high level of parallel
 
 ### Hive 
 * A data warehouse software within Hadoop that is designed for reading, writing, and managing tabular-type datasets and data analysis.
-* HiveQL is inspried by SQL
+* HiveQL is inspired by SQL
 * Supports data cleansing and filtering depending on users' requirements
 
+### Hive and tradisional RDBMS compared
 
+| Traditional RDBMS        | Hive           |
+|--------------------------|----------------|
+|Used to maintain a Database and uses SQL|Used to maintain a data warehouse using Hive query language|
+|Suited for real-time/dynamic data analysis like data sensors|Suited for static data analysis like a txt file containing names|
+|Designed to read and write as many times as it needs|Designed on the methodology of write once, read many|\
+|Maximum data size it can handle is terabytes|Maximum data size it can handle is petabytes|
+|Enforces that the schema must verify loading data before it can proceed|Doesn't enforce the schema to verify loading data|
+|Mya not always have built-in for support data partitioning|Supports partitioning (dividing the table into parts based on the values of a particular column such as date or city)|
 
 
 
