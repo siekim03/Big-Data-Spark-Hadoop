@@ -21,4 +21,6 @@
 |:----------------------:|:---------------------------------:|
 |Core Spark engine <br> Clusters and executors <br> Cluster management <br> SparkSQL <br> Catalyst Tungsten DataFrames|SparkML <br> DataFrames <br> Streaming|
 
-
+### Lambda functions and Spark
+* Spark parallelizes computations using the lambda calculus
+* All functional Spark programs are inherently parallelizable
