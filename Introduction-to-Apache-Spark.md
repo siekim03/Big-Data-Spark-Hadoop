@@ -59,3 +59,10 @@ Apache Spark components:
 * Apache Spark architecture consists of three main pieces components data, compute input, and management. 
 * The fault-tolerant Spark Core base engine performs large-scale parallel and distributed data processing, manages memory, schedules tasks, and houses APIs that define RDDs.
 * The Spark driver program communicates with the cluster and then distributes RDDs among worker nodes.
+
+### Spark SQL and DataFrames
+* SparkSQL is a Spark module for structured data processing.
+* Spark SQL provides a programming abstraction called DataFrames and can also act as a distributed SQL query engine.
+* DataFrames are conceptually equivalent to a table in a relational database or a data frame in R/Python, but with richer optimizations.
+
+![](SparkSQL_DF-API.PNG?raw=true)
