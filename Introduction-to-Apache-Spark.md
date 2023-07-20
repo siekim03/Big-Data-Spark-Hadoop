@@ -65,4 +65,4 @@ Apache Spark components:
 * Spark SQL provides a programming abstraction called DataFrames and can also act as a distributed SQL query engine.
 * DataFrames are conceptually equivalent to a table in a relational database or a data frame in R/Python, but with richer optimizations.
 
-![](SparkSQL_DF-API.PNG?raw=true)
+![](SparkSQL_DFAPI.PNG?raw=true)
