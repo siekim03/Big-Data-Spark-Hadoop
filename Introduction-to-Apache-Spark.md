@@ -54,3 +54,8 @@ Apache Spark components:
 
 ![](SparkArchitecture.PNG?raw=true)
 ![](SparkScaleUp.PNG?raw=true)
+
+### Summary
+* Apache Spark architecture consists of three main pieces components data, compute input, and management. 
+* The fault-tolerant Spark Core base engine performs large-scale parallel and distributed data processing, manages memory, schedules tasks, and houses APIs that define RDDs.
+* The Spark driver program communicates with the cluster and then distributes RDDs among worker nodes.
