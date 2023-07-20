@@ -30,14 +30,18 @@
 * A fault-tolerant collection of elements
 * Partitioned across the nodes of the cluster
 * Capable of accepting parallel operations
-* Immutatable
+* Immutatable (always recoverable)
 * Supported files types: Text, SequenceFiles, Avro, Parquet, Hadoop input formats
 * Supported file formats: Local, Cassandra, HBase, HDFS, Amazon S3, and others, SQL and NoSQL
+* Can persist or cache datasets in memory across operations, which speeds iterative operations
 
 ## Creating an RDD in Spark
 * Use an external or local file from Hadoop-supported file system
-* Create a RDD from list in Python
+* Create a RDD from list in Python / Scala
 `data = [1, 2, 3, 4, 5]`
 `disData = sc.parallelize(data)`
-* 
+* Apply a transformation on an existing RDD to create a new RDD
   
+### RDD and Parallel Programming
+* We can create an RDD by parallelizing an array of objects, or by splitting a dataset into partitions
+* Spark runs one task for each partition of the cluster
