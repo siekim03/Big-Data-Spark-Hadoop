@@ -51,3 +51,6 @@ Apache Spark components:
 * Data storage, HDFS, and other formats
 * Compute interface, API: Scala, Java, Python
 * Management distributed computing standalone, Mesos, YARN, and Kubernetes
+
+![](SparkArchitecture.PNG?raw=true)
+![](SparkScaleUp.PNG?raw=true)
