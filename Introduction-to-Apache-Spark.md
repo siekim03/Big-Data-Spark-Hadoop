@@ -24,3 +24,12 @@
 ### Lambda functions and Spark
 * Spark parallelizes computations using the lambda calculus
 * All functional Spark programs are inherently parallelizable
+
+### Resilient Distributed Dataset
+* Spark primary data abstraction
+* A fault-tolerant collection of elements
+* Partitioned across the nodes of the cluster
+* Capable of accepting parallel operations
+* Immutatable
+* Supported files types: Text, SequenceFiles, Avro, Parquet, Hadoop input formats
+* Supported file formats: Local, Cassandra, HBase, HDFS, Amazon S3, and others, SQL and NoSQL
