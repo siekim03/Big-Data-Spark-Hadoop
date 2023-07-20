@@ -69,7 +69,7 @@ The advantages of MapReduce is its ability to allow for a high level of parallel
   * Secondary node (data node) - actual workers in the HDFS system and take instructions from the primary nodes
 * ***Rack awareness*** - choosing data node racks that are closest to each other. A rack is the collection of about 40 to 50 data nodes using the same network switch. Improves cluster performance by reducing the network traffic. Name node keeps the rack ID information. Replication can be done through rack awareness.
 * ***Replication*** - creating a copy of data block. Replication factor: number of times the data block was copied.
-* 
+  
 ![](Replication.PNG?raw=true)
 ![](Replication2.PNG?raw=true)
 
