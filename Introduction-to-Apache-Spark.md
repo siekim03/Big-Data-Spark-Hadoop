@@ -45,3 +45,9 @@
 ### RDD and Parallel Programming
 * We can create an RDD by parallelizing an array of objects, or by splitting a dataset into partitions
 * Spark runs one task for each partition of the cluster
+
+### Scale out / Data Parallelism in Apache Spark
+Apache Spark components: 
+* Data storage, HDFS, and other formats
+* Compute interface, API: Scala, Java, Python
+* Management distributed computing standalone, Mesos, YARN, and Kubernetes
